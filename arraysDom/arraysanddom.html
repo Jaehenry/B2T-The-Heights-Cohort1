@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <!-- Create empty HTML text element-->
+    <p id = "empty"></p>
+    <p id = "empty2"></p>
+    <p id = "empty3"></p>
+    <p id = "empty4"></p>
+    <p id = "empty5"></p>
+
+<script type="text/javascript">
+    
+    // Create Fruit Array
+    var fruits = ["apple", "orange", "kiwi"];
+
+    // Display elements separated by commas
+    document.getElementById("empty").innerHTML = fruits.toString();
+
+    //add more fruit to the end of the array. Create prompt
+    fruits.push(prompt(" Add more fruits"));
+
+    //Display fruit added with prompt
+    document.getElementById("empty2").innerHTML = fruits.toString();
+
+    //remove 1st element in array
+    fruits.shift();
+
+    //Display current list of fruits
+    document.getElementById("empty3").innerHTML = fruits.toString();
+
+    //Sort the elements
+    fruits.sort();
+
+    //Display list of sorted elements
+    document.getElementById("empty4").innerHTML = fruits.toString();
+
+    // Display elements separated by word "with"
+    document.getElementById("empty5").innerHTML = fruits.join(" with ");
+
+
+</script>
+
+</body>
+</html>

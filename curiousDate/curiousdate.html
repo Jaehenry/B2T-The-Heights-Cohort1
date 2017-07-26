@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	var date1 = new Date();
+	var date2 = new Date (2052, 11, 5, 6, 19, 00);
+
+	//console.log (date1);
+	
+	//var diffInYear = Math.abs (date2.getFullYear() - date1.getFullYear())
+
+	//var diffInMonth = Math.abs (date2.getMonth() - date1.getMonth())
+
+	//console.log ('The difference in year is ' + diffInYear );
+	//console.log ("The difference in month is " + diffInMonth );
+
+	//var diffInDate = Math.abs (date2.getDate() - date1.getDate());
+
+	//console.log ("The difference in date is " + diffInDate );
+
+	//convert time to milliseconds
+	var today = date1.getTime ();
+	var future = date2.getTime ();
+
+	//  subtract and convert back to regular time
+	var diffInDate = Math.round ((future - today)/(24*60*60*1000));
+
+	console.log ("There are " + diffInDate + " days left until " + date2);
+	
+	
+
+
+</script>
+</body>
+</html>
